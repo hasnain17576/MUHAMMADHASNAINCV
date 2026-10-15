@@ -121,6 +121,11 @@ vercel --prod`;
                 <span>Your site will be live at: <code className="text-blue-300">https://muhammad-hasnain-cv.vercel.app</code> with free global SSL!</span>
               </li>
             </ul>
+
+            {/* Note on peer dependency error */}
+            <div className="mt-3 p-2.5 rounded-lg bg-amber-950/40 border border-amber-800/60 text-[11px] text-amber-200/90">
+              <strong className="text-amber-300">Tip for &quot;npm error peer vite&quot; on Vercel:</strong> We have added <code className="text-white">.npmrc</code> and <code className="text-white">vercel.json</code> with <code className="text-amber-300">--legacy-peer-deps</code>. If you are configuring manually in Vercel settings, enable <em>Override Install Command</em> and enter: <code className="text-white bg-slate-900 px-1 py-0.5 rounded">npm install --legacy-peer-deps</code>.
+            </div>
           </div>
 
           {/* Method B: Terminal CLI (Alternative) */}
